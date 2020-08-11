@@ -1,38 +1,190 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.wrapper{
+  height: 100vh;
   display: flex;
   flex-direction: column;
+}
+.app {
+  height: 90vh;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: "Montserrat", sans-serif;
+}
+h1{
   color: white;
+  /* margin-bottom: 2%; */
+  margin-top: 2%;
+  align-self: center;
+  font-size: 40px;
+}
+.time-select,
+.sound-picker {
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+.time-select button,
+.sound-picker button {
+  color: white;
+  width: 30%;
+  height: 10%;
+  background: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: all 0.5s ease;
+}
+.time-select button:hover,
+.sound-picker button:hover{
+  transform: scale(1.1);
+}
+.sound-picker button {
+  border: none;
+  height: 120px;
+  width: 120px;
+  padding: 30px;
+  border-radius: 50%;
+}
+.sound-picker button:nth-child(1) {
+  background: #4972a1;
+}
+.sound-picker button:nth-child(2) {
+  background: #a14f49;
+}
+.sound-picker button img {
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.time-select button:hover {
+  background: white;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.player-container {
+  position: relative;
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.player-container svg {
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  pointer-events: none;
+}
+.player-container svg circle {
+  transition: all 0.2s ease-in-out;
+}
+.player-container .play,
+.player-container .pause{
+  /* margin-top: 10%; */
+  padding-top: 10%;
+}
+.player-container .replay{
+  padding-bottom: 10%;
+}
+.player-container .play,
+.player-container .pause,
+.player-container .replay{
+  transition: all 0.2s ease-in-out;
+}
+.player-container .play:hover,
+.player-container .pause:hover,
+.player-container .replay:hover{
+  transform: scale(1.1);
+}
+.player-container .hidden{
+  display: none;
+}
+.time-display {
+  color: white;
+  position: absolute;
+  font-size: 50px;
+  bottom: 10%;
+}
+
+video {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  /* width: 100%; */
+  z-index: -10;
+}
+
+@media only screen and (max-width: 650px) {
+  h1{
+    font-size: 30px;
   }
-  to {
-    transform: rotate(360deg);
+  .app{
+    flex-direction: column;
+    /* flex: 1 5 auto; */
+  }
+  .time-select,
+  .sound-picker {
+    /* background-color: red; */
+    max-height: 15vh;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    flex-direction: row;
+  }
+  .sound-picker{
+    padding-bottom: 2%;
+  }
+  .time-select button,
+  .sound-picker button {
+    color: white;
+    width: 25%;
+    height: auto;
+    background: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: all 0.5s ease;
+  }
+  .time-select button{
+    padding: 2px;
+  }
+  .sound-picker button {
+    width: auto;
+    height: 80px;
+    max-width: 40%;
+  }
+  .sound-picker button img {
+    height: 140%;
+  }
+  .player-container .play,
+  .player-container .pause{
+    width: auto;
+    height: 15%;
+    padding-top: 25%;
+  }
+  .player-container .replay{
+    width: auto;
+    height: 8%;
+    padding-bottom: 20%;
+  }
+  .time-display {
+    font-size: 35px;
   }
 }
