@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/meditation-app/static/css/main.a76dfc45.chunk.css",
+    "main.js": "/meditation-app/static/js/main.0b667e2b.chunk.js",
+    "main.js.map": "/meditation-app/static/js/main.0b667e2b.chunk.js.map",
+    "runtime-main.js": "/meditation-app/static/js/runtime-main.4080ac6d.js",
+    "runtime-main.js.map": "/meditation-app/static/js/runtime-main.4080ac6d.js.map",
+    "static/js/2.c3b40317.chunk.js": "/meditation-app/static/js/2.c3b40317.chunk.js",
+    "static/js/2.c3b40317.chunk.js.map": "/meditation-app/static/js/2.c3b40317.chunk.js.map",
+    "index.html": "/meditation-app/index.html",
+    "precache-manifest.7cbd7316b163be9d1d5bf4e25b57e079.js": "/meditation-app/precache-manifest.7cbd7316b163be9d1d5bf4e25b57e079.js",
+    "service-worker.js": "/meditation-app/service-worker.js",
+    "static/css/main.a76dfc45.chunk.css.map": "/meditation-app/static/css/main.a76dfc45.chunk.css.map",
+    "static/js/2.c3b40317.chunk.js.LICENSE.txt": "/meditation-app/static/js/2.c3b40317.chunk.js.LICENSE.txt",
+    "static/media/beach.mp3": "/meditation-app/static/media/beach.19878a78.mp3",
+    "static/media/beach.mp4": "/meditation-app/static/media/beach.7e8a870b.mp4",
+    "static/media/beach.svg": "/meditation-app/static/media/beach.9e2bf4f1.svg",
+    "static/media/moving-outline.svg": "/meditation-app/static/media/moving-outline.a87a0eac.svg",
+    "static/media/pause.svg": "/meditation-app/static/media/pause.77ad076f.svg",
+    "static/media/play.svg": "/meditation-app/static/media/play.cfc8963d.svg",
+    "static/media/rain.mp4": "/meditation-app/static/media/rain.4d060cd5.mp4",
+    "static/media/rain.mp3": "/meditation-app/static/media/rain.cd600007.mp3",
+    "static/media/rain.svg": "/meditation-app/static/media/rain.d7645cf4.svg",
+    "static/media/replay.svg": "/meditation-app/static/media/replay.134a517b.svg",
+    "static/media/track-outline.svg": "/meditation-app/static/media/track-outline.91fbdf1d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4080ac6d.js",
+    "static/js/2.c3b40317.chunk.js",
+    "static/css/main.a76dfc45.chunk.css",
+    "static/js/main.0b667e2b.chunk.js"
+  ]
+}
